@@ -14,7 +14,7 @@ export const ProductSaleChart = ({ product }: ProductSalesChartProps) => {
     const [retailSales, setRetailSales] = useState<LineChartDataPoint[]>([])
     const [wholeSales, setWholeSales] = useState<LineChartDataPoint[]>([])
     const [unitSold, setUnitSold] = useState<LineChartDataPoint[]>([])
-    const [margin, setMargin] = useState<LineChartDataPoint[]>([])
+    const [retailMargin, setRetailMargin] = useState<LineChartDataPoint[]>([])
 
     useEffect(() => {
         const newRetailSales: LineChartDataPoint[] = []
@@ -44,7 +44,7 @@ export const ProductSaleChart = ({ product }: ProductSalesChartProps) => {
         setRetailSales(newRetailSales)
         setWholeSales(newWholeSales)
         setUnitSold(newUnitSold)
-        setMargin(newMargin)
+        setRetailMargin(newMargin)
     }, [product])
 
     const convertToSeries = (data: LineChartDataPoint[], label: string) => {
@@ -58,9 +58,9 @@ export const ProductSaleChart = ({ product }: ProductSalesChartProps) => {
         const retailData = convertToSeries(retailSales, 'Retail Sale')
         const wholeSaleData = convertToSeries(wholeSales, 'Wholesale')
         const unitSoldData = convertToSeries(unitSold, 'Unit Sold')
-        const retailMarginData = convertToSeries(margin, 'Retail Margin')
+        const retailMarginData = convertToSeries(retailMargin, 'Retail Margin')
         return [retailData, wholeSaleData, unitSoldData, retailMarginData]
-    }, [retailSales, wholeSales, unitSold, margin])
+    }, [retailSales, wholeSales, unitSold, retailMargin])
 
     if (!product) return <></>
 
