@@ -11,6 +11,7 @@ This application displays a single product and it's sales data. On the left side
 2. React Redux
 3. React bootstrap
 4. HighCharts
+5. eslint/prettier
 
 
 ### Ways to Improve and Limitation
