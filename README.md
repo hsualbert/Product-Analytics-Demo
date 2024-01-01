@@ -7,7 +7,7 @@ Link to the [Github Page](https://hsualbert.github.io/Product-Analytics-Demo/)
 This application displays a single product and it's sales data. On the left side, the product overview can be seen. On the main view, a chart and table with the sales data can be viewed. The chart has 4 data series and each data series can be toggled by clicking on the data series label on the bottom of the chart. The table displays the sales data and the following columns can be sorted: Retail Sales, Wholesale Sales, Units Sold, Retailer Margin
 
 ### Package Used 
-1. React
+1. React Typescript
 2. React Redux
 3. React bootstrap
 4. HighCharts
