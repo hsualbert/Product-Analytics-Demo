@@ -1,0 +1,13 @@
+.navigation-bar {
+    height: 5vh;
+    min-height: 3em;
+    background-color: #05284a;
+}
+.navigation-bar-brand {
+    margin-left: 4rem;
+}
+
+.logo {
+    min-height: 1.5rem;
+    /* width: 100px; */
+}

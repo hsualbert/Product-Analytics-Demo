@@ -1,0 +1,5 @@
+{
+    "prettier.configPath": ".prettierrc",
+    "vs-code-prettier-eslint.prettierLast": true,
+    "prettier.useTabs": true
+}
